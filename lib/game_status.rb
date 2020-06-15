@@ -74,6 +74,12 @@ def won? (board)
   won
 end
 
+def full?(board)
+  full=false
+  board.each do
+    
+  end
+end
 #puts winlose
 #puts win
 
