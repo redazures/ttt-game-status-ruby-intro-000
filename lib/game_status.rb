@@ -81,6 +81,7 @@ def full?(board)
   end
   full
 end
+
 #puts winlose
 #puts win
 
