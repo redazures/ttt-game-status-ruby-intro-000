@@ -85,7 +85,7 @@ win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,r
 winlose = [define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
 winlose.each do |state|
 win= state if state!=false
-
+end
 #puts iswin(board1)
 puts win
 
