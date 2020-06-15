@@ -97,6 +97,7 @@ def over?(board)
   end
 end
 
+puts over?(board1)
 puts over?(board10)
 
 #puts winlose
