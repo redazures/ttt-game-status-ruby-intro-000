@@ -98,10 +98,13 @@ def over?(board)
 end
 
 def cp (board)
-  winna=nil
+  winna=""
   if over?==true && won?==false
-  if board[iswin(board)[2]]=="X"
+    winna=nil
+  elsif board[iswin(board)[2]]=="X"
     winna="X"
+  elsif board[iswin(board)[2]]=="X"
+     winna="O"
   winna
 end
 
