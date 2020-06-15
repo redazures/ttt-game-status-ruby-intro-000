@@ -91,7 +91,7 @@ def draw?(board)
 
 end
 
-puts full?(board1)
+puts draw?(board10)
 
 #puts winlose
 #puts win
