@@ -59,6 +59,7 @@ def iswin(board)
 end
 
 def won? (board)
+  win=false
   if board==[" "," "," "," "," "," "," "," "," "]
     false
   elsif iswin(board)==true
