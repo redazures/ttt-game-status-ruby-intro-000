@@ -75,7 +75,7 @@ end
 #puts define_win(win_combinations[0],board1)
 
 
-puts define_win(win_combinations[0],board10)
+puts define_win(WIN_COMBINATIONS[0],board10)
 puts iswin(board10)
 
 #won=false
