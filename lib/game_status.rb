@@ -89,7 +89,15 @@ def draw?(board)
   end
 end
 
-puts draw?(board10)
+def over?(board)
+  if draw?(board)==true && won?==true
+    true
+  else
+    false
+  end
+end
+
+puts over?(board10)
 
 #puts winlose
 #puts win
