@@ -75,7 +75,7 @@ def won? (board)
 end
 
 def full?(board)
-  full=false
+  full=true
   board.each do |slot|
   full=true if slot!=" "
   end
@@ -83,6 +83,7 @@ def full?(board)
 end
 
 puts full?(board10)
+
 #puts winlose
 #puts win
 
