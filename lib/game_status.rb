@@ -59,7 +59,7 @@ def iswin(board)
   winlose.each do |state|
   win= state if state!=false
   end
-  puts win
+  win
 end
 
 def won? (board)
