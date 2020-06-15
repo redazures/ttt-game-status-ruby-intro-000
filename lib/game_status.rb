@@ -100,8 +100,8 @@ end
 def cp (board)
   winna=nil
   if over?==true && won?==false
-  if board[iswin(board)[2]]=="X" 
-    winna="X"    
+  if board[iswin(board)[2]]=="X"
+    winna="X"
   winna
 end
 
