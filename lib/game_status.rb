@@ -82,6 +82,15 @@ def full?(board)
   full
 end
 
+def draw?(board)
+  tie=false
+  if full?(board)==true&&won?(board)==false
+    tie=true
+  end
+  end
+  
+end
+
 puts full?(board1)
 
 #puts winlose
