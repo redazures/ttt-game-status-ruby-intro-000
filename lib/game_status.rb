@@ -87,7 +87,7 @@ winlose.each do |state|
 win= state if state!=false
 
 #puts iswin(board1)
-
+puts win
 
 #puts iswin(board2)
 #puts won?(board1)
