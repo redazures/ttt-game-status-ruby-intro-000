@@ -45,6 +45,7 @@ def define_win(win_combination,board)
 end
 
 def iswin(board)
+  win=false
   top_row_win=[0,1,2]
   mid_row_win=[3,4,5]
   bot_row_win=[6,7,8]
