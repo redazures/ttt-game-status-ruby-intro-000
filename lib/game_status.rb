@@ -63,12 +63,13 @@ def iswin(board)
 end
 
 def won? (board)
+  won=false
   if board==[" "," "," "," "," "," "," "," "," "]
-    false
+    won=false
   elsif iswin(board)==true
-    true
+    won=iswin(board)
   else
-    false
+    won=false
   end
 end
 
@@ -77,18 +78,6 @@ board=board9
 #puts winlose
 #puts win
 
-puts iswin(board1)
-puts iswin(board2)
-puts iswin(board3)
-puts iswin(board4)
-puts iswin(board5)
-puts iswin(board6)
-puts iswin(board7)
-puts iswin(board8)
-puts iswin(board9)
-puts iswin(board10)
-
-#puts iswin(board2)
 #puts won?(board1)
 #puts win_combinations.length-1
 #puts define_win(win_combinations[0],board1)
