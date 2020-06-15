@@ -73,17 +73,7 @@ end
 #puts won?(board1)
 #puts win_combinations.length-1
 #puts define_win(win_combinations[0],board1)
-count=0
-board=board1
-win_combinations=[]
-while count <= win_combinations.length-1
-  count += 1
-  if define_win(win_combinations[count],board).kind_of?(Array)==true
-    output = define_win(win_combinations[count],board)
-    break
-  else
-  end
-end
+
 
 puts define_win(win_combinations[0],board10)
 puts iswin(board10)
