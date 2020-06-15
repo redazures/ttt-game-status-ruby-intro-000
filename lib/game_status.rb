@@ -62,13 +62,7 @@ def won? (board)
   if board==[" "," "," "," "," "," "," "," "," "]
     false
   elsif iswin(board)==true
-      count=0
-      output=[]
-      while count <= win_combinations.length-1
-        count += 1
-        if define_win(win_combinations[count],board).kind_of?(Array)==true
-          output = define_win(win_combinations[count],board)
-          break
+    true
         else
         end
         output
