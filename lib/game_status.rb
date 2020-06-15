@@ -82,7 +82,7 @@ def full?(board)
   full
 end
 
-puts full?(board10)
+puts full?(board1)
 
 #puts winlose
 #puts win
