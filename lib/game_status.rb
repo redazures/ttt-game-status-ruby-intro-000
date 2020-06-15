@@ -74,9 +74,9 @@ end
 board=board9
 
 #puts winlose
-puts win
+#puts win
 
-#puts iswin(board1)
+puts iswin(board1)
 
 #puts iswin(board2)
 #puts won?(board1)
