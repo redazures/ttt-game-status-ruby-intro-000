@@ -67,6 +67,7 @@ def won? (board)
   else
     win=false
   end
+  win
 end
 
 #puts iswin(board1)
