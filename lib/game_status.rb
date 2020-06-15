@@ -76,15 +76,7 @@ end
 count=0
 board=board1
 output=[]
-while count <= win_combinations.length-1
-  count += 1
-  if define_win(win_combinations[count],board).kind_of?(Array)==true
-    output = define_win(win_combinations[count],board)
-    break
-  else
-  end
-  output=define_win(win_combinations[count],board)
-end
+
 
 puts define_win(win_combinations[0],board10)
 puts iswin(board10)
