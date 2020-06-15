@@ -65,7 +65,7 @@ def won? (board)
   elsif iswin(board)==true
     win=iswin(board)
   else
-    false
+    win=false
   end
 end
 
