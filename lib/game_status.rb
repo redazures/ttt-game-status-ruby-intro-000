@@ -99,7 +99,7 @@ end
 
 def winner(board)
   winna="O"
-  if iswin(board)[2]=="X"
+  if board[iswin(board)[2]]=="X"
     winna="X"
   end
   winna
