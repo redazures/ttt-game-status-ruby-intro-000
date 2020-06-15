@@ -77,7 +77,7 @@ end
 def full?(board)
   full=true
   board.each do |slot|
-  full=true if slot!=" "
+  full=false if slot==" "
   end
   full
 end
