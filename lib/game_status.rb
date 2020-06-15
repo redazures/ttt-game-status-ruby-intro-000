@@ -108,8 +108,8 @@ end
 puts board1[iswin(board1)[0]]
 #puts iswin(board1)[1]
 #puts iswin(board1)[2]
-#puts winner(board1)
-#puts winner(board9)
+puts winner(board1)
+puts winner(board9)
 
 #puts won?(board1)==true
 #puts winlose
