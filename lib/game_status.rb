@@ -88,7 +88,7 @@ def draw?(board)
     tie=true
   end
   end
-  
+
 end
 
 puts full?(board1)
