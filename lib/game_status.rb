@@ -71,6 +71,21 @@ def won? (board)
   end
 end
 
+board=board1
+win=false
+top_row_win=[0,1,2]
+mid_row_win=[3,4,5]
+bot_row_win=[6,7,8]
+left_col_win=[0,3,6]
+mid_col_win=[1,4,7]
+right_col_win=[2,5,8]
+left_right_win=[0,4,8]
+right_left_win=[2,4,6]
+win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
+winlose = [define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
+winlose.each do |state|
+win= state if state!=false
+
 puts iswin(board1)
 #puts iswin(board2)
 #puts won?(board1)
