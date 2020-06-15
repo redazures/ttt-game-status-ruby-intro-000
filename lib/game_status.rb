@@ -79,6 +79,7 @@ def full?(board)
   board.each do
 
   end
+  full
 end
 #puts winlose
 #puts win
