@@ -71,7 +71,7 @@ def won? (board)
   end
 end
 
-board=board2
+board=board3
 win=false
 top_row_win=[0,1,2]
 mid_row_win=[3,4,5]
