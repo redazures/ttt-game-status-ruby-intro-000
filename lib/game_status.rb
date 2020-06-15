@@ -90,11 +90,11 @@ def draw?(board)
 end
 
 def over?(board)
+  ova=false
   if draw?(board)==true && won?==true
-    true
-  else
-    false
+    ova=true
   end
+  ova
 end
 
 puts over?(board1)
