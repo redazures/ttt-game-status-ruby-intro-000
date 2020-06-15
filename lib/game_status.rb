@@ -97,7 +97,7 @@ def over?(board)
   ova
 end
 
-def cp (board)
+def winner (board)
   winna=""
   if over?==true && won?==false
     winna=nil
