@@ -84,6 +84,7 @@ winlose.each do |state|
 win<< state if state.kind_of(Array)
 end
 
+puts win
 
 #won=false
 #puts won
