@@ -74,7 +74,7 @@ def won? (board)
   won
 end
 
-won?(board1)
+puts won?(board1)
 
 #puts winlose
 #puts win
