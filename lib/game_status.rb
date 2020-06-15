@@ -99,7 +99,7 @@ end
 
 puts over?(board1)
 puts over?(board10)
-puts won?(board1)
+puts won?(board1)==true
 
 #puts winlose
 #puts win
