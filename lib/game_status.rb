@@ -105,7 +105,7 @@ def winner(board)
   winna
 end
 
-puts iswin(board1)
+puts iswin(board1)[0]
 #puts winner(board1)
 #puts winner(board9)
 
