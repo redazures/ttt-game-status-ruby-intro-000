@@ -99,7 +99,7 @@ end
 
 def winner (board)
   winna=""
-  if over?==true && won?==false
+  if over?(board)==true && won?==false
     winna=nil
   elsif board[iswin(board)[2]]=="X"
     winna="X"
