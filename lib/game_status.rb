@@ -103,7 +103,7 @@ def cp (board)
     winna=nil
   elsif board[iswin(board)[2]]=="X"
     winna="X"
-  elsif board[iswin(board)[2]]=="O"
+  else board[iswin(board)[2]]=="O"
      winna="O"
    end
   winna
