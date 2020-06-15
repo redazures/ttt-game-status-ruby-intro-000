@@ -97,7 +97,15 @@ def over?(board)
   ova
 end
 
-puts over?(board1)
+def winner(board)
+  winna="O"
+  if define_win(board)=="X"
+    winna="X"
+  end
+  winna
+end
+
+puts define_win(board1)
 puts over?(board10)
 
 #puts won?(board1)==true
