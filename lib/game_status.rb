@@ -91,7 +91,7 @@ end
 
 def over?(board)
   ova=false
-  if draw?(board)==true && won?==true
+  if draw?(board)==true || won?==true
     ova=true
   end
   ova
