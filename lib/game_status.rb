@@ -106,8 +106,8 @@ def winner(board)
 end
 
 puts iswin(board1)
-#puts winner(board1)
-#puts winner(board9)
+puts winner(board1)
+puts winner(board9)
 
 #puts won?(board1)==true
 #puts winlose
