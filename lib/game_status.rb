@@ -14,7 +14,7 @@ mid_col_win=[1,4,7]
 right_col_win=[2,5,8]
 left_right_win=[0,4,8]
 right_left_win=[2,4,6]
-win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
+WIN_COMBINATIONS=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
 
 board1=["X","X","X"," "," "," "," "," "," "]
 board2=[" "," "," ","X","X","X"," "," "," "]
