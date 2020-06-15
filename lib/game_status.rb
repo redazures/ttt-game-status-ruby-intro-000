@@ -97,7 +97,7 @@ def over?(board)
   ova
 end
 
-def winner(board)
+def cp (board)
   winna="O"
   if board[iswin(board)[2]]=="X"
     winna="X"
