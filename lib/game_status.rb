@@ -78,6 +78,15 @@ board=board9
 #puts win
 
 puts iswin(board1)
+puts iswin(board2)
+puts iswin(board3)
+puts iswin(board4)
+puts iswin(board5)
+puts iswin(board6)
+puts iswin(board7)
+puts iswin(board8)
+puts iswin(board9)
+puts iswin(board10)
 
 #puts iswin(board2)
 #puts won?(board1)
