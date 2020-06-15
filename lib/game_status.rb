@@ -55,7 +55,7 @@ def iswin(board)
   left_right_win=[0,4,8]
   right_left_win=[2,4,6]
   win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
-  win = [define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
+  winlose = [define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
   win.any?
 end
 
