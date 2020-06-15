@@ -63,14 +63,9 @@ def won? (board)
     false
   elsif iswin(board)==true
     true
-        else
-        end
-        output
-      end
   else
     false
   end
-  output
 end
 
 #puts iswin(board1)
