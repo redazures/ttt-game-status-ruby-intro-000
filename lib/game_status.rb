@@ -71,6 +71,7 @@ def won? (board)
   else
     won=false
   end
+  won
 end
 
 board=board9
