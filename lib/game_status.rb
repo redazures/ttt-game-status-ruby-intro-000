@@ -3,4 +3,114 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+board=[" "," "," "," "," "," "," "," "," "]
 # Define your WIN_COMBINATIONS constant
+
+top_row_win=[0,1,2]
+mid_row_win=[3,4,5]
+bot_row_win=[6,7,8]
+left_col_win=[0,3,6]
+mid_col_win=[1,4,7]
+right_col_win=[2,5,8]
+left_right_win=[0,4,8]
+right_left_win=[2,4,6]
+win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
+
+board1=["X","X","X"," "," "," "," "," "," "]
+board2=[" "," "," ","X","X","X"," "," "," "]
+board3=[" "," "," "," "," "," ","X","X","X"]
+board4 =["X"," "," ","X"," "," ","X"," "," "]
+board5 =[" ","X"," "," ","X"," "," ","X"," "]
+board6 =[" "," ","X"," "," ","X"," "," ","X"]
+board7 =["X"," "," "," ","X"," "," "," ","X"]
+board8 =[" "," ","X"," ","X"," ","X"," "," "]
+board9= ["O","O","O"," "," "," "," "," "," "]
+board10=["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+win_arrays= [board1,board2,board3,board4,board5,board6,board7,board8]
+
+def define_win(win_combination,board)
+  win_index_1 = win_combination[0]
+  win_index_2 = win_combination[1]
+  win_index_3 = win_combination[2]
+  position_1 = board[win_index_1] # load the value of the board at win_index_1
+  position_2 = board[win_index_2] # load the value of the board at win_index_2
+  position_3 = board[win_index_3] # load the value of the board at win_index_3
+  if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    return win_combination # return the win_combination indexes that won.
+  elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+    return win_combination # return the win_combination indexes that won.
+  else
+    false
+  end
+end
+
+def iswin(board)
+  top_row_win=[0,1,2]
+  mid_row_win=[3,4,5]
+  bot_row_win=[6,7,8]
+  left_col_win=[0,3,6]
+  mid_col_win=[1,4,7]
+  right_col_win=[2,5,8]
+  left_right_win=[0,4,8]
+  right_left_win=[2,4,6]
+  win_combinations=[top_row_win,mid_row_win,bot_row_win,left_col_win,mid_col_win,right_col_win,left_right_win,right_left_win]
+  win = [define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
+  win.any?
+end
+
+def won? (board)
+  if board==[" "," "," "," "," "," "," "," "," "]
+    false
+  elsif iswin(board)==true
+      count=0
+      output=[]
+      while count <= win_combinations.length-1
+        count += 1
+        if define_win(win_combinations[count],board).kind_of?(Array)==true
+          output = define_win(win_combinations[count],board)
+          break
+        else
+        end
+        output
+      end
+  else
+    false
+  end
+  output
+end
+
+#puts iswin(board1)
+#puts iswin(board2)
+#puts won?(board1)
+#puts win_combinations.length-1
+#puts define_win(win_combinations[0],board1)
+count=0
+board=board1
+output=[]
+while count <= win_combinations.length-1
+  count += 1
+  if define_win(win_combinations[count],board).kind_of?(Array)==true
+    output = define_win(win_combinations[count],board)
+    break
+  else
+  end
+  output=define_win(win_combinations[count],board)
+end
+
+puts define_win(win_combinations[0],board10)
+puts iswin(board10)
+puts output
+
+#won=false
+#puts won
+#puts win_arrays[0]
+#win_combination = define_win(top_row_win,board1)
+#puts define_win(top_row_win,board1).kind_of?(Array)
+#define_win(top_row_win,board1)==true
+#temp= define_win(top_row_win,board2)
+#puts temp
+#puts temp.kind_of?(Array)
+#temp<<false
+#puts temp
+#puts win_combination
+#puts temp==win_combination
