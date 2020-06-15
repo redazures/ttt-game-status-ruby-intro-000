@@ -105,8 +105,8 @@ def winner(board)
   winna
 end
 
-puts define_win(board1)
-puts over?(board10)
+puts winner(board1)
+puts winner(board9)
 
 #puts won?(board1)==true
 #puts winlose
