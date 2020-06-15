@@ -71,21 +71,15 @@ def won? (board)
   end
 end
 
-#puts iswin(board1)
+puts iswin(board1)
 #puts iswin(board2)
 #puts won?(board1)
 #puts win_combinations.length-1
 #puts define_win(win_combinations[0],board1)
 
-board=board10
 #puts define_win(WIN_COMBINATIONS[0],board10)
 #puts iswin(board10)
-win=false
-winlose=[define_win(top_row_win,board), define_win(mid_row_win,board), define_win(bot_row_win,board), define_win(left_col_win,board), define_win(mid_col_win,board), define_win(right_col_win,board), define_win(left_right_win,board), define_win(right_left_win,board)]
 #puts winlose
-winlose.each do |state|
-win= state if state.kind_of?(Array)
-end
 
 puts win
 
