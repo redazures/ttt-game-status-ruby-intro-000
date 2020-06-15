@@ -77,7 +77,6 @@ end
 
 puts define_win(win_combinations[0],board10)
 puts iswin(board10)
-puts output
 
 #won=false
 #puts won
