@@ -86,7 +86,7 @@ winlose = [define_win(top_row_win,board), define_win(mid_row_win,board), define_
 winlose.each do |state|
 win= state if state!=false
 end
-puts winloss
+puts winlose
 puts iswin(board1)
 puts win
 
