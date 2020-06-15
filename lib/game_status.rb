@@ -78,6 +78,7 @@ end
 puts define_win(WIN_COMBINATIONS[0],board10)
 puts iswin(board10)
 win=[]
+puts win
 #won=false
 #puts won
 #puts win_arrays[0]
