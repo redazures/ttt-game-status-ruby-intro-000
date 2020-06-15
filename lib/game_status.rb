@@ -75,6 +75,16 @@ def won? (board)
 end
 
 puts won?(board1)
+puts won?(board2)
+puts won?(board3)
+puts won?(board4)
+puts won?(board5)
+puts won?(board6)
+puts won?(board7)
+puts won?(board8)
+puts won?(board9)
+puts won?(board10)
+
 
 #puts winlose
 #puts win
