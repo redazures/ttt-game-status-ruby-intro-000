@@ -105,6 +105,7 @@ def cp (board)
     winna="X"
   elsif board[iswin(board)[2]]=="X"
      winna="O"
+   end
   winna
 end
 
